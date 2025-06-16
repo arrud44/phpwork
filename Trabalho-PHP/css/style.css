@@ -1,0 +1,170 @@
+/* Reset básico para todos os elementos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo base para corpo da página */
+body,
+html {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #cfe3e8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal dos formulários */
+.formulario-container {
+  background-color: #222831;
+  padding: 40px 50px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  color: #eeeeee;
+}
+
+/* Títulos principais */
+h1,
+h2 {
+  text-align: center;
+  color: #00adb5;
+  margin-bottom: 24px;
+}
+
+/* Estilização das labels */
+label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #eeeeeecc;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #393e46;
+  background-color: #393e46;
+  color: #eeeeee;
+  transition: 0.3s ease;
+}
+
+/* Foco nos inputs */
+input:focus {
+  outline: none;
+  background-color: #2e3239;
+  border-color: #00adb5;
+}
+
+/* Botões */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #00adb5;
+  color: #222831;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #00ced1;
+}
+
+/* Mensagens de erro e sucesso */
+.mensagem-erro,
+.mensagem-sucesso {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.mensagem-erro {
+  color: #ff4f4f;
+}
+
+.mensagem-sucesso {
+  color: #33ff99;
+}
+
+/* Links padrão */
+a {
+  color: #00adb5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo da página index inicial */
+.index-container {
+  background-color: #ffffffee;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.index-container h1 {
+  color: #222831;
+  margin-bottom: 20px;
+}
+
+.index-container p {
+  margin-bottom: 30px;
+  color: #393e46;
+  font-weight: 500;
+}
+
+/* Botões da tela inicial */
+.index-container a {
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #00adb5;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.index-container a:hover {
+  background-color: #00ced1;
+}
+
+/* Bloco de botões para login/cadastro */
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.botoes a {
+  background-color: #00adb5;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.botoes a:hover {
+  background-color: #00ced1;
+}
